@@ -2,9 +2,9 @@ const input = document.querySelector('#name-input')
 const output = document.querySelector('#name-output')
 
 const changeText = event => {
-    if (event.currentTarget.value > 0) {
+    if (event.currentTarget.value.length > 0) {
         output.textContent = event.currentTarget.value
-    } else { 
+    } else {
         output.textContent = 'Anonymous'
     }
 }
