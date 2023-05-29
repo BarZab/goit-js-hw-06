@@ -11,9 +11,6 @@ const checkLength = (event) => {
         textArea.removeAttribute('class')
         textArea.classList.add('invalid')
     }
-    console.log(dataLength === stringLength)
 }
 
 textArea.addEventListener('blur', checkLength)
-
-console.log(dataLength)
