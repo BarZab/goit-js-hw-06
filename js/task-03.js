@@ -18,7 +18,7 @@ const theGallery = document.querySelector('ul')
 function createGallery() {
   for (const image of images) {
     const item = document.createElement('li')
-    item.insertAdjacentHTML("afterbegin", `<img href='${image.url}' alt='${image.alt}'>`)
+    item.insertAdjacentHTML("afterbegin", `<img src='${image.url}' alt='${image.alt}'>`)
     theGallery.append(item)
     item.style.display = 'flex'
   }
